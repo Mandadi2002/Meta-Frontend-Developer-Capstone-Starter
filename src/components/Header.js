@@ -13,10 +13,12 @@ const Header = () => {
                <Link to="/booking"><button aria-label='On Click'>Reserve a table</button></Link>
             </div>
 
-            <div>
+            <div className='banner-img'>
                 <img src={bannerImg} alt='' />
             </div>
            </section>
         </header>
-    )
-}
+    );
+};
+
+export default Header;
