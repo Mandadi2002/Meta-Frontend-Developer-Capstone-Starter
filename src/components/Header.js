@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import bannerImg from '../images/restauranfood.jpg'
 
 const Header = () => {
     return (
@@ -13,7 +14,7 @@ const Header = () => {
             </div>
 
             <div>
-                <img src="" alt='' />
+                <img src={bannerImg} alt='' />
             </div>
            </section>
         </header>
