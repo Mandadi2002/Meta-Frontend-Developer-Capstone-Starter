@@ -10,13 +10,13 @@ const Nav = () => {
             <img src={logo} alt='logo'/>
             </a> 
 
-            <div className="menu-icon">
+            <div className="menu-icon" onClick={toggleMenu}>
                 <div clssmate='bar'></div>
                 <div clssmate='bar'></div>
                 <div clssmate='bar'></div>
             </div>
 
-            <ul>
+            <ul className={`nav-links ${menuOpen ? 'visible' : ''}`}>
                 <li>
                 <a href="/">Home</a>  
                 </li>
