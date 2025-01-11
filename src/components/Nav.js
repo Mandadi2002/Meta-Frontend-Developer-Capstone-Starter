@@ -22,11 +22,14 @@ const Nav = () => {
                 <a href="/">About</a>
                 </li>
                 <li>
-                <a href="/">About</a>
+                <a href="/">Services</a>
                 </li>
                 <li>
-                <a href="/">About</a>
+                <a href="/">Menu</a>
                  </li>
+                <li>
+                <a href="/">Reservation</a>
+                </li>
                 <li>
                 <a href="/">Order Online</a>
                 </li>
