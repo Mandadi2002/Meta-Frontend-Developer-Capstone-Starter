@@ -4,7 +4,7 @@ import bannerImg from '../images/restauranfood.jpg'
 
 const Header = () => {
     return (
-        <header className='Header'>
+        <header className='header'>
            <section>
             <div className='banner'>
                <h2>Little Lemon</h2>
