@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Booking from './Booking';
-import ConfirmedBooking from './ConfirmedBooking';
 
 const Main = () => {
     //const {state, dispatch} = useReducer(updateTimes, initialState);  // Assuming useReducer is imported
