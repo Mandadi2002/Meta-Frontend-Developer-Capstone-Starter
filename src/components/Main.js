@@ -9,6 +9,10 @@ const Main = () => {
     const state = [];
     const dispatch = () => {};
     const SubmitForm = () => {}; // Placeholder for SubmitForm
+    
+    function updateTimes(state, date) {
+        
+    }
 
     return (
         <main>
