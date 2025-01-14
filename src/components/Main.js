@@ -7,6 +7,11 @@ import Booking from './Booking';
 const Main = () => {
     //const {state, dispatch} = useReducer(updateTimes, initialState);  // Assuming useReducer is imported
     //  The following is a placeholder since useReducer is not fully defined in the provided code.
+
+    const submitAPI = function(formData){
+        return true;
+    }
+
     const state = [];
     const dispatch = () => {};
     const SubmitForm = () => {}; // Placeholder for SubmitForm
