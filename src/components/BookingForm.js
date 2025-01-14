@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React from 'react';
 
-const BookingForm = () => {
+const BookingForm = (props) => {
     // eslint-disable-next-line no-use-before-define
     const [date, setDate] = setDate('');
     const [times, setTimes] = setDate('');
