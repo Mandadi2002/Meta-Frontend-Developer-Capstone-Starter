@@ -55,3 +55,5 @@ const BookingForm = (props) => {
         </haeder>
     );
 };
+
+export default BookingForm;
