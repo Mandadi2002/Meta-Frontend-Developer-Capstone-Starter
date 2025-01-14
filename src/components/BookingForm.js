@@ -1,12 +1,13 @@
 /* eslint-disable no-undef */
-import React from 'react';
+import React, { useState } from 'react';
 
 const BookingForm = (props) => {
     // eslint-disable-next-line no-use-before-define
-    const [date, setDate] = setDate('');
-    const [times, setTimes] = setDate('');
-    const [guests] = setDate('');
-    const [occasion] = setDate('');
+    const [date, setDate] = useState('');
+    const [times, setTimes] = useState('');
+    const [guests, setGuests] = useState('');
+    const [occasion, setOccasion] = useState('');
+
     const handleSubmit = (e) =>{
         e.preventDefault();
         props.SubmitForm(e);
@@ -31,11 +32,26 @@ const BookingForm = (props) => {
                                 </option>})
                             }
                         </div>
+
+                        <div>
+                            <label htmlFor='book-guests'>Number of guests</label>
+                            <input id='book-guests' value={guests} onChange={(e) => setGuests(e.target.value)} />
+                        </div>
+
+                        <div>
+                            <label htmlFor='book-occasion'>Occasion</label>
+                            <select id='book-occasion' key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                        </select>
+                        </div>
+
+                        <div className='btnReceive'>
+                            <input aria-label='On-Click' type='submit' value={'Make your reservation'}></input>
+                        </div>
                     </fieldset>
                 </form>
             </section>
         </haeder>
     );
 };
-
-export default BookingForm;
