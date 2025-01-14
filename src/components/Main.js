@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Booking from './Booking';
 
@@ -11,6 +12,14 @@ const Main = () => {
     const SubmitForm = () => {}; // Placeholder for SubmitForm
     
     function updateTimes(state, date) {
+        return {avaliableTimes:fetchAPI(new Date())}
+    }
+
+    const navigate = useNavigate();
+    function submitForm (formDate) {
+        if(submitAPI(formData)){
+            navigate('/confirmed');
+        }
         
     }
 
