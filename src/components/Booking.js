@@ -6,3 +6,5 @@ const Booking = (props) => {
          <BookingForm avaliableTimes={props.avaliableTimes} dispatch={props.dispatch} SubmitForm={props.submitForm}/> 
     );
 };
+
+export default Booking;
