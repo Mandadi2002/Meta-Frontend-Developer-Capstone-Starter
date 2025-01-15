@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const BookingForm = (props) => {
-    // eslint-disable-next-line no-use-before-define
     const [date, setDate] = useState("");
     const [times, setTimes] = useState('');
     const [guests, setGuests] = useState('');
