@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Booking.css';
 
-const ConfirmedBookingComponent = () => {
+const ConfirmedBooking = () => {
     return (
         <div className='confirm'>
          <div>
