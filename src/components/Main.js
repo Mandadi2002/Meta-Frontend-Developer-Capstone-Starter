@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import React, { useReducer } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './Header';
