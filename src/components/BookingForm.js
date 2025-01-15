@@ -11,9 +11,6 @@ const BookingForm = (props) => {
         props.SubmitForm(e);
     }
 
-    const handleChange = (e) =>{
-        setDate(e);
-    }
     return (
         <haeder>
             <section>
