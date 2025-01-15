@@ -1,11 +1,8 @@
-/* eslint-disable no-use-before-define */
-/* eslint-disable no-undef */
 import React, { useReducer } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Booking from './Booking';
 
-// eslint-disable-next-line no-unused-vars
 const Main = () => {    
     const initialState = {avaliableTimes: fetchAPI(new Date())};
     const [state, dispatch] = useReducer(updateTimes,initialState);
