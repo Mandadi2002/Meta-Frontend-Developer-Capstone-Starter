@@ -4,6 +4,7 @@ import Header from './Header';
 import Booking from './Booking';
 
 const Main = () => {    
+    // eslint-disable-next-line no-use-before-define
     const initialState = {avaliableTimes: fetchAPI(new Date())};
     const [state, dispatch] = useReducer(updateTimes,initialState);
 
