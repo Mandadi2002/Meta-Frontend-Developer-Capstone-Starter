@@ -4,11 +4,11 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Booking from './Booking';
 
-const Main = () => {
-
+const Main = () => {    
     const initialState = {avaliableTimes: fetchAPI(new Date())};
     const [state, dispatch] = useReducer(updateTimes,initialState);
-}
+
+
 
     const seedRandom = function(seed){
         var m = 2**35 - 31;
@@ -40,9 +40,9 @@ const Main = () => {
         return true;
     }
 
-    const state = [];
-    const dispatch = () => {};
-    const SubmitForm = () => {}; // Placeholder for SubmitForm
+    const SubmitForm = (formData) => {
+        submitForm(formData);
+    };
     
     function updateTimes(state, date) {
         return {avaliableTimes:fetchAPI(new Date())}
@@ -50,12 +50,11 @@ const Main = () => {
 
     const navigate = useNavigate();
     function submitForm (formDate) {
-        if(submitAPI(formData)){
+        if(submitAPI(formDate)){
             navigate('/confirmed');
         }
         
-    };
-    
+    }
     return (
         <main>
             <Routes>
@@ -66,4 +65,4 @@ const Main = () => {
         </main>
     );
 
-export default Main;
+};
