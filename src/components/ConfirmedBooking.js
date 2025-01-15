@@ -1,7 +1,7 @@
 import React from 'react';
+import './styles/Booking.css';
 
-// eslint-disable-next-line no-unused-vars
-const ConfirmedBooking = () => {
+const ConfirmedBookingComponent = () => {
     return (
         <div className='confirm'>
          <div>
