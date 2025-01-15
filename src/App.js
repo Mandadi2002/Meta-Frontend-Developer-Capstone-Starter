@@ -9,7 +9,6 @@ function App() {
         <>
         <Nav/>
         <Main/>
-        <BookingForm/>
         </>
 
     );
