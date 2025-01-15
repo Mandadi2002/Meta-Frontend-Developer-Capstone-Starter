@@ -4,12 +4,14 @@ import Header from './Header';
 import Booking from './Booking';
 
 
+const Main = () => {  
 
-const Main = () => {    
     const initialState = {avaliableTimes: fetchAPI(new Date())};
     const [state, dispatch] = useReducer(updateTimes,initialState);
 
-
+    function updateTimes(state,date){
+        return {avaliableTimes:fetchAPI(new Date())}
+    }
 
     const seedRandom = function(seed){
         var m = 2**35 - 31;
@@ -25,10 +27,10 @@ const Main = () => {
         for (let i = 17; i<= 23; i++){
             if(random() < 0.5){
                 result.push(i + ':00')
-        }
-        if(random() > 0.5){
-            result.push(i + ':30')
-        }
+            }
+            if(random() > 0.5){
+                result.push(i + ':30')
+            }
         }
         return result;
      }
@@ -40,10 +42,6 @@ const Main = () => {
     const SubmitForm = (formData) => {
         submitForm(formData);
     };
-    
-    function updateTimes(state, date) {
-        return {avaliableTimes:fetchAPI(new Date())}
-    }
 
     const navigate = useNavigate();
     function submitForm (formDate) {
@@ -51,13 +49,12 @@ const Main = () => {
             navigate('/confirmed');
         }
         
-    }
+    };
     return (
         <main>
             <Routes>
                <Route path='/' element={<Header/>}/>
                <Route path='/booking' element={<Booking avaliableTimes={state} dispatch={dispatch} SubmitForm={SubmitForm} />} />
-               <Route path='/' element={<Header/>}/>
             </Routes>
         </main>
     );
