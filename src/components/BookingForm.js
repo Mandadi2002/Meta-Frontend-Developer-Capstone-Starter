@@ -49,7 +49,6 @@ const BookingForm = (props) => {
                             <option>Anniversary</option>
                         </select>
                         </div>
-
                         <div className='btnReceive'>
                             <input aria-label='On-Click' type='submit' value={'Make your reservation'}></input>
                         </div>
