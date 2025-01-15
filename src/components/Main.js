@@ -18,10 +18,6 @@ const Main = () => {
             return (s = (s * a) % m) / m;
         }
     }
-    //const {state, dispatch} = useReducer(updateTimes, initialState);  // Assuming useReducer is imported
-    //  The following is a placeholder since useReducer is not fully defined in the provided code.
-
-
      const fetchAPI = function(date){
         let result = [];
         let random = seedRandom(date.getDate());
