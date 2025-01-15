@@ -6,7 +6,7 @@ import Booking from './Booking';
 
 const Main = () => {  
 
-    const initialState = {avaliableTimes: fetchAPI(new Date())};
+    const initialState = {avaliableTimes: (new Date())};
     const [state, dispatch] = useReducer(updateTimes,initialState);
 
     function updateTimes(state,date){
