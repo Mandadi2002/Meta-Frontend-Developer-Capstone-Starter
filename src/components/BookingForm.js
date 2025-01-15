@@ -13,7 +13,6 @@ const BookingForm = (props) => {
 
     const handleChange = (e) =>{
         setDate(e);
-        props.dispatch(e);
     }
     return (
         <haeder>
