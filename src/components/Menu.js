@@ -25,10 +25,10 @@ const Menu = () => {
           })
     }
     return (
-    <div classname='menu=container'>
+    <div classname='menu-container'>
         <div className="menu-header">
             <h2>This weeks specials!</h2>
-            <button>Online Menu</button>
+            <button>Order Menu</button>
         </div>
 
         <div className="cards">
