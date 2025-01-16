@@ -1,6 +1,9 @@
 import React from "react";
 
 const BookingForm = () => {
+    const handleChange = (e) => {
+
+    }
     return (
         <header>
             <section>
@@ -8,7 +11,7 @@ const BookingForm = () => {
                     <fieldset>
                         <div>
                             <label htmlFor='book-date'>Choose Date</label>
-                            <input id='book-date' value={date} type='date' required/>
+                            <input id='book-date' value={date} onChange={(e) => handleChange(e.target.value)} type='date' required/>
                         </div>
                     </fieldset>
                 </form>
