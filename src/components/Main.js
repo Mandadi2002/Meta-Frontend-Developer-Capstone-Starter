@@ -6,7 +6,11 @@ import Booking from "./Booking";
 const Main = () => {
 
     const fetchAPI = function(date){
-        
+        let result = [];
+        let random = seedRandom(date.getDate());
+        for (let i=17; i<=23; i++) {
+            if(random())
+        }
     }
 
     const submitAPI = function(formData) {
