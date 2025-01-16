@@ -21,6 +21,15 @@ const Footer = () => {
                        <li><a href='/'>Login</a></li>
                     </ul>
                 </div>
+
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Address: <br/> 123 Towncity, USA</li>
+                        <li>Phone: <br/> ++ 0123 4560</li>
+                        <li>Email: <br/> little@lemon.com</li>
+                    </ul>
+                </div>
             </section>
         </footer>
     );
