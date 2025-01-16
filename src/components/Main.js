@@ -55,6 +55,7 @@ const Main = () => {
             <Routes>
                <Route path='/' element={<Header/>}/>
                <Route path='/booking' element={<Booking avaliableTimes={state} dispatch={dispatch} SubmitForm={SubmitForm} />} />
+               <Route path='/' element={<Header/>}/>
             </Routes>
         </main>
     );
