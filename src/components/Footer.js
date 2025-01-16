@@ -30,6 +30,16 @@ const Footer = () => {
                         <li>Email: <br/> little@lemon.com</li>
                     </ul>
                 </div>
+
+                <div>
+                    <h3>Social Media Links</h3>
+                    <ul>
+                        <li><a href='/'>Facebook</a></li>
+                        <li>< a href='/'>Twitter</a></li>
+                        <li><a href='/'>Instagram</a></li>
+                    </ul>
+                </div>
+
             </section>
         </footer>
     );
