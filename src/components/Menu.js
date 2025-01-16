@@ -9,7 +9,7 @@ const Menu = () => {
             <h2>This weeks specials!</h2>
             <button>Online Menu</button>
         </div>
-        
+
         <div className="cards">
             {
                 receipes.map(receipe => <div key={receipe.id}>
@@ -23,8 +23,11 @@ const Menu = () => {
                     </div>
                     <p>{receipe.description}</p>
                     <button className="orderBtn">Order Now</button>
-                    }
-
-                )
+                    </div>)
             }
         </div>
+    </div>
+    );
+};
+
+export default Menu;
