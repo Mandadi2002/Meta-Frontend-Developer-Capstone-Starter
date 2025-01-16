@@ -9,9 +9,9 @@ const Menu = () => {
             <button>Online Menu</button>
         </div>
 
-        <div>
+        <div className='cards'>
             {
-                receipes.map(receipe => <div key={receipe.id}>
+                receipes.map(receipe => <div key={receipe.id} className='menu-items'>
                 <img src={receipe.image} alt=''/>
                 <div>
                     <div>
