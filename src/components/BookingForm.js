@@ -11,13 +11,8 @@ const BookingForm = (props) => {
         props.SubmitForm(e);
     }
 
-    const handleDateChange = (e) => {
+    const handleChange = (e) => {
         setDate(e.target.value);
-    }
-
-    const setTimes = (e) =>{
-        setDate(e);
-        props.dispatch(e);
     }
     return (
         <haeder>
