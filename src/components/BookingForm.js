@@ -10,6 +10,15 @@ const BookingForm = (props) => {
         e.PreventDefault();
         props.SubmitForm(e);
     }
+
+    const handleDateChange = (e) => {
+        setDate(e.target.value);
+    }
+
+    const setTimes = (e) =>{
+        setDate(e);
+        props.dispatch(e);
+    }
     return (
         <haeder>
             <section>
