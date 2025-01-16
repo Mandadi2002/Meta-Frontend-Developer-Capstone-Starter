@@ -14,8 +14,8 @@ const Menu = () => {
             {
                 receipes.map(receipe => <div key={receipe.id}>
                     <img src={receipe.image} alt=''/>
-                    <div>
-                        <div>
+                    <div className="menu-content">
+                        <div className="heading">
                             <h5>{receipe.title}</h5>
                             <p>{receipe.price}</p>
                         </div>
