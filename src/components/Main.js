@@ -6,7 +6,7 @@ import Booking from './Booking';
 
 const Main = () => {  
 
-    const initialState = {avaliableTimes: (new Date())};
+    const initialState = {avaliableTimes: fetchAPI(new Date())};
     const [state, dispatch] = useReducer(updateTimes,initialState);
 
     function updateTimes(state,date){
@@ -44,8 +44,8 @@ const Main = () => {
     };
 
     const navigate = useNavigate();
-    function submitForm (formDate) {
-        if(submitAPI(formDate)){
+    function submitForm (formData) {
+        if(submitAPI(formData)){
             navigate('/confirmed');
         }
         
