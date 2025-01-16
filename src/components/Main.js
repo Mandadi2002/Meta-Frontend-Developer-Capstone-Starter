@@ -8,6 +8,8 @@ const Main = () => {
     const [state,dispatch] = useReducer(updateTimes, initialState);
 
     function updateTimes(state, date) {
+        return {availableTimes: fetchAPI(date)};
+    }
     return (
         <main>
             <Routes>
