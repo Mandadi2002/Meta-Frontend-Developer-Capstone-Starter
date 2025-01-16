@@ -5,7 +5,7 @@ const Main = () => {
     return (
         <main>
             <Routes>
-                <Route></Route>
+                <Route path='/' element={<Header/>}/>
             </Routes>
 
             </main>
