@@ -31,7 +31,7 @@ const BookingForm = (props) => {
                             <select id='book-time' value={times} onChange={(e) => setTimes(e.target.value)} required>
                                 <option value="">Select a Time</option>
                                 {
-                                    props.avaliableTimes.avaliableTimes.map(avaliableTimes => {return <option key={avaliableTimes}>{avaliableTimes}</option>})
+                                    props.availableTimes.availableTimes.map(availableTimes => {return <option key={availableTimes}>{availableTimes}</option>})
                                 }
                             </select>
                         </div>
