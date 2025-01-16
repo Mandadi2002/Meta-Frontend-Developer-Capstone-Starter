@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 const Menu = () => {
 
     const handleOrder = (id) => {
-        console.log(id,"id is clicked");
+        console.log(id,"id is clicked"); 
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
