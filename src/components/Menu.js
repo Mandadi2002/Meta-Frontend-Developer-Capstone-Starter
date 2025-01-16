@@ -42,7 +42,6 @@ const Menu = () => {
                         </div>
                         <p>{receipe.description}</p>
                     </div>
-                    <p>{receipe.description}</p>
                     <button className="orderBtn">Order Now</button>
                     </div>)
             }
