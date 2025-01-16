@@ -43,9 +43,15 @@ const BookingForm = () => {
                         
                         <div>
                             <label htmlFor='book-occasion'>Occasion:</label>
-                            <select id='book-occasion' key={occasion} onChange={(e) => setOccasion(e.target.value)} required></select>
+                            <select id='book-occasion' key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)} required>
+                                <option>Birthday</option>
+                                <option>Anniversary</option>
+                            </select>
                         </div>
-
+                        
+                        <div className="btnReceive">
+                            <input aria-label="On Click" type="submit" value="Make Your Reservation"></input>
+                        </div>
                     </fieldset>
                 </form>
             </section>
