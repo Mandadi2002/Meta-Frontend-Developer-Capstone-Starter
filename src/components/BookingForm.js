@@ -1,6 +1,7 @@
 import React from "react";
 
 const BookingForm = () => {
+    const [date, setDate] = React.useState("");
     const handleChange = (e) => {
 
     }
