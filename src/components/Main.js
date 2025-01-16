@@ -4,7 +4,10 @@ import Header from "./Header";
 import Booking from "./Booking";
 
 const Main = () => {
+    const initialState = {availableTimes: fetchAPI(new Date())};
     const [state,dispatch] = useReducer(updateTimes, initialState);
+
+    function updateTimes(state, date) {
     return (
         <main>
             <Routes>
