@@ -19,9 +19,11 @@ test('Initialize/Update Times', () => {
   const reserveButton = screen.getByRole("button");
   fireEvent.click(reserveButton);
 
-  const testTime = []
-  // userEvent.selectOptions(screen.getByLabelText("Choose Time"),screen.getByRole('option', { name: testTime}))
-  // expect(screen.getByRole('option', { name: testTime}).selected).toBe(true);
+  const timeOptions = screen.queryAllByRole('option');
+  const time = timeOptions[0];
+  // eslint-disable-next-line no-undef
+  userEvent.selectOptions(screen.getByLabelText("Choose Time"), time)
+  expect(time.selected).toBe(true);
 
 
 })
