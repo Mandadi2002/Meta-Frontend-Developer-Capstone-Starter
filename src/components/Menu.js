@@ -19,7 +19,7 @@ const Menu = () => {
                         <p>{receipe.price}</p>
                     </div>
                        <p>{receipe.description}</p>
-                       <button>Order Now</button>
+                       <button className="orderBtn">Order Now</button>
                     </div>
                 </div>)
 }
