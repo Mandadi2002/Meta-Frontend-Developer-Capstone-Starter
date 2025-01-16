@@ -3,28 +3,27 @@ import receipes from "../recipes";
 
 
 const Menu = () => {
+    return (
     <div classname='menu=container'>
-        <div>
-            <h2>This week specials</h2>
+        <div className="menu-header">
+            <h2>This weeks specials!</h2>
             <button>Online Menu</button>
         </div>
-
-        <div className='cards'>
+        <div>
             {
-                receipes.map(receipe => <div key={receipe.id} className='menu-items'>
-                <img src={receipe.image} alt=''/>
-                <div>
+                receipes.map(receipe => <div key={receipe.id}>
+                    <img src={receipe.image} alt=''/>
                     <div>
-                        <h5>{receipe.title}</h5>
-                        <p>{receipe.price}</p>
+                        <div>
+                            <h5>{receipe.title}</h5>
+                            <p>{receipe.price}</p>
+                        </div>
+                        <p>{receipe.description}</p>
                     </div>
-                       <p>{receipe.description}</p>
-                       <button className="orderBtn">Order Now</button>
-                    </div>
-                </div>)
-}
-        </div>
-    </div>
-}
+                    <p>{receipe.description}</p>
+                    <button className="orderBtn">Order Now</button>
+                    }
 
-export default Menu;
+                )
+            }
+        </div>
